@@ -1,61 +1,28 @@
 # cshowme.github.io — Legal Pages
 
-This repository hosts the legal pages for the SaaS service deployed via **GitHub Pages**.
+Legal pages for **AI DOI Verifier Pro** (AI 文獻品管師), deployed via GitHub Pages.
 
-The following legal documents are included:
+Operated by 匯東華統計顧問有限公司 (HDH Statistical Consulting Co., Ltd.)
 
-## 📄 Legal Documents
+## Legal Documents
 
-- **Privacy Policy**  
-  File: `privacy.html`  
-  URL: https://cshowme.github.io/privacy.html
+| Document | File | URL |
+|----------|------|-----|
+| Privacy Policy | `privacy.html` | https://cshowme.github.io/privacy.html |
+| Terms of Service | `terms.html` | https://cshowme.github.io/terms.html |
+| Refund Policy | `refund.html` | https://cshowme.github.io/refund.html |
 
-- **Terms of Service**  
-  File: `terms.html`  
-  URL: https://cshowme.github.io/terms.html
+- Version: v1.0 (2026-02-08)
+- Audit: PASS (97/100)
 
-- **Refund Policy**  
-  File: `refund.html`  
-  URL: https://cshowme.github.io/refund.html
-
-
-## 🚀 Deployment (GitHub Pages)
-
-This repository is deployed using **GitHub Pages**.
-
-Recommended GitHub Pages settings:
+## Deployment (GitHub Pages)
 
 - Source: `Deploy from a branch`
 - Branch: `main`
 - Folder: `/(root)`
 
-
-## 📂 Local Files
-
-The legal HTML files are prepared locally in:
-
-# cshowme.github.io
-Legal pages for cshowme.github.io (Terms of Service, Privacy Policy, Disclaimer)
-
-
-Files included:
-
-- `privacy.html`
-- `terms.html`
-- `refund.html`
-
-
-## 🔧 Update Workflow
-
-To update the legal pages:
+## Update Workflow
 
 1. Modify the HTML files locally
-2. Commit changes
-3. Push to the `main` branch
-
-GitHub Pages will automatically redeploy after the push.
-
-
-## 📌 Notes
-
-These pages are intended to be referenced by the SaaS product for compliance and user transparency.
+2. Commit and push to `main`
+3. GitHub Pages will automatically redeploy
