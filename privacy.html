@@ -41,7 +41,7 @@
 <table>
   <tr><th>蒐集項目</th><th>蒐集方式</th><th>目的</th></tr>
   <tr><td>IP 位址雜湊值</td><td>系統自動產生（SHA-256 不可逆雜湊）</td><td>頻率限制、防止濫用</td></tr>
-  <tr><td>瀏覽器指紋雜湊值</td><td>系統自動產生</td><td>輔助頻率限制</td></tr>
+  <tr><td>瀏覽器指紋識別碼</td><td>系統自動產生</td><td>輔助頻率限制</td></tr>
   <tr><td>DOI 查詢紀錄</td><td>使用者提交</td><td>提供驗證服務</td></tr>
   <tr><td>查詢時間戳記</td><td>系統自動記錄</td><td>頻率限制、使用統計</td></tr>
 </table>
@@ -95,7 +95,7 @@
   <tr><td>OpenAlex</td><td>文獻資訊補充</td><td>DOI 編號</td><td><a href="https://openalex.org/legal/privacy" target="_blank">OpenAlex Privacy</a></td></tr>
   <tr><td>Unpaywall</td><td>開放取用偵測</td><td>DOI 編號</td><td><a href="https://unpaywall.org/legal/privacy" target="_blank">Unpaywall Privacy</a></td></tr>
   <tr><td>Semantic Scholar</td><td>摘要取得</td><td>DOI 編號</td><td><a href="https://allenai.org/privacy-policy" target="_blank">Allen AI Privacy</a></td></tr>
-  <tr><td>Supabase</td><td>身份驗證與資料儲存</td><td>帳號資料、使用紀錄</td><td><a href="https://supabase.com/privacy" target="_blank">Supabase Privacy</a></td></tr>
+  <tr><td>Supabase</td><td>身份驗證與資料儲存（資料中心位於南亞 Mumbai 區域）</td><td>帳號資料、使用紀錄</td><td><a href="https://supabase.com/privacy" target="_blank">Supabase Privacy</a></td></tr>
   <tr><td>綠界科技 ECPay</td><td>付款處理</td><td>交易資料</td><td><a href="https://www.ecpay.com.tw/Privacy" target="_blank">ECPay Privacy</a></td></tr>
 </table>
 
@@ -108,7 +108,7 @@
 
 <table>
   <tr><th>資料類型</th><th>儲存位置</th><th>保留期間</th></tr>
-  <tr><td>免費版 IP 雜湊 / 使用紀錄</td><td>Supabase（PostgreSQL）</td><td><strong>7 天</strong>（自動清除）</td></tr>
+  <tr><td>免費版 IP 雜湊 / 使用紀錄</td><td>Supabase（PostgreSQL）</td><td><strong>7 天</strong>（定期清除；實際清除時間可能因系統排程略有延遲）</td></tr>
   <tr><td>付費版驗證紀錄</td><td>Supabase（PostgreSQL）</td><td>帳號存續期間</td></tr>
   <tr><td>帳號資料（email 等）</td><td>Supabase Auth</td><td>帳號存續期間，或刪除帳號後 30 天內清除</td></tr>
   <tr><td>付款紀錄</td><td>綠界科技 + 本地資料庫</td><td>依稅法規定保留 5 年</td></tr>
